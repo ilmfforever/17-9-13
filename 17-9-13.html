@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	let str="abcabcabcabcabcabcabcabcabc";
+// function indexOf(str,str1){
+// 	let str3=[];
+// 	let str2="*".repeat(str1.length);//repeat重复
+//      while(str.includes(str1)){
+//      // console.log(str.indexOf(str1));
+//      str3[str3.length]=str.indexOf(str1);
+// 	 str=str.replace(str1,str2);
+// } 
+// return str3; 
+// }
+// console.log(indexOf(str,"ab"));
+
+
+function indexOf(str,str1){
+	let str3=[];
+	let str2="*".repeat(str1.length);//repeat重复
+	for(let i=0;i<str.length;i++){
+     if(str.slice(i,i+2)=="ab"){
+     str3[str3.length]=i;
+} 
+}
+return str3; 
+}
+console.log(indexOf(str,"ab"));
+
+</script>
+	
+</body>
+</html>
